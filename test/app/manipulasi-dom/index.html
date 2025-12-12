@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Mencoba Manipulasi DOM</h1>
+
+    <div class="section">
+        <h2>Masukkan </h2>
+        <input type="text" id="item-input" placeholder="Enter item...">
+        <button id="add-item">Tambah Item</button>
+        <ul id="item-list"></ul>
+    </div>
+
+    <div class="section">
+        <h2>Ubah Background</h2>
+        <div class="color-buttons">
+            <button class="red" id="red-bg">Merah</button>
+            <button class="green" id="green-bg">Hijau</button>
+            <button class="blue" id="blue-bg">Biru</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Counter</h2>
+        <div id="counter">0</div>
+        <div class="counter-buttons">
+            <button id="increment">+</button>
+            <button id="decrement">-</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <button id="toggle-btn">Tampilkan</button>
+        <p id="toggle-para">Ini adalah paragraf yang bisa ditampilkan atau disembunyikan. Klik tombol di atas untuk toggle!</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
