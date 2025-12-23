@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className="w-full relative bg-gray-800">
+    <nav className="w-full relative bg-gray-800 shadow-xl/30 rounded-xl ">
   <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div className="relative flex h-16 items-center justify-between">
       <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -19,10 +20,10 @@ export default function Navbar() {
         <div className="hidden sm:ml-6 sm:block">
           <div className="flex space-x-4">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" --> */}
-            <a href="#" aria-current="page" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Product-Category</a>
-            <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Product</a>
-            <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Product-Variant</a>
-            <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendar</a>
+            <Link href="/" aria-current="page" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Home</Link>
+            <Link href="/product-category" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Product-Category</Link>
+            <Link href="/product" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Product</Link>
+            <Link href="/product-variant" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Product-Variant</Link>
           </div>
         </div>
       </div>
